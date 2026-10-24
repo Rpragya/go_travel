@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@import 'react-day-picker/style.css';
+@import 'leaflet/dist/leaflet.css';
+
+@theme {
+  --font-sans: 'Lato', ui-sans-serif, system-ui, sans-serif;
+  --color-brand-50: #eaf5ff;
+  --color-brand-100: #d1e9ff;
+  --color-brand-200: #a3d3ff;
+  --color-brand-400: #3ba6ff;
+  --color-brand-500: #008cff;
+  --color-brand-600: #0074d6;
+  --color-brand-700: #005aa8;
+  --color-brand-900: #051322;
+  --color-accent-500: #ff6d38;
+  --color-accent-600: #f0561c;
+  --color-page: #f2f2f2;
+}
+
+body {
+  @apply bg-page text-gray-900 antialiased;
+}
+
+.rdp-root {
+  --rdp-accent-color: var(--color-brand-500);
+  --rdp-accent-background-color: var(--color-brand-50);
+  --rdp-day-width: 40px;
+  --rdp-day-height: 40px;
+  --rdp-day_button-width: 38px;
+  --rdp-day_button-height: 38px;
+  font-size: 14px;
+}
+
+.leaflet-container {
+  font-family: inherit;
+}
+
+.price-pin {
+  @apply rounded-full bg-white px-2 py-0.5 text-xs font-bold whitespace-nowrap text-gray-900 shadow-md ring-1 ring-gray-300;
+}
+.price-pin.active {
+  @apply bg-brand-500 text-white ring-brand-600;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
